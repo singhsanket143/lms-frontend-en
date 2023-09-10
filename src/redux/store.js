@@ -5,6 +5,7 @@ const store = configureStore({
     reducer: {
         auth: authReducer
     },
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware({serializableCheck: false}),
     devTools: true
 });
 
