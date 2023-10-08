@@ -67,7 +67,7 @@ function DisplayLectures() {
                                 Lectures List
 
                                 {role === "ADMIN" && (
-                                    <button onClick={() => navigate("/course/addlecture")} className="btn-primary px-2 py-1 rounded-md font-semibold text-sm">
+                                    <button onClick={() => navigate("/course/addlecture", {state: {...state}})} className="btn-primary px-2 py-1 rounded-md font-semibold text-sm">
                                         Add new lecture
                                     </button>
                                 )}
